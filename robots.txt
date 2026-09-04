@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lescheung.github.io/ai-shortdrama-toolkit/sitemap.xml
