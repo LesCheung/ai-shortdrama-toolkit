@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 短劇提示詞完整教學（2026）：鉤子 + 場景 prompt 一次搞掂</title>
+<meta name="description" content="2026 年 AI 短劇提示詞完整教學：用即夢 AI、可靈 Kling、Seedance、Sora 寫出電影級短劇鉤子同場景。附 3 組即用 prompt 模板，仲有 100 個對應鉤子包介紹。">
+<meta name="keywords" content="AI短劇提示詞, 短劇 prompt, 即夢AI短劇, 可靈AI短劇, 短劇鉤子, seedance 提示詞, sora 提示詞, AI短劇教程">
+<link rel="canonical" href="https://lescheung.github.io/ai-shortdrama-toolkit/post8-ai-shortdrama-prompts-zh.html">
+<meta property="og:title" content="AI 短劇提示詞完整教學（2026）">
+<meta property="og:description" content="用即夢 AI、可靈 Kling、Seedance、Sora 寫出電影級短劇鉤子同場景。附 3 組即用 prompt 模板。">
+<meta property="og:type" content="article">
+<style>
+:root{--bg:#0d0d12;--card:#171720;--accent:#e1452d;--accent2:#d4a944;--text:#f0ede6;--muted:#a9a6a0;--border:#2a2a36}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC','Microsoft JhengHei',-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+.wrap{max-width:860px;margin:0 auto;padding:44px 22px}
+article{background:var(--card);padding:34px 28px;border-radius:16px;border:1px solid var(--border)}
+h1{font-size:2rem;line-height:1.4;margin-bottom:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:1.4rem;margin:34px 0 14px;border-left:4px solid var(--accent);padding-left:12px}
+h3{font-size:1.15rem;margin:22px 0 8px;color:var(--accent2)}
+p{margin-bottom:14px;color:var(--text)}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:20px}
+pre{background:#0b0b10;padding:16px 18px;border-radius:10px;overflow-x:auto;border:1px solid var(--border);margin:16px 0;font-size:.92rem;white-space:pre-wrap}
+code{color:#9dd3ff}
+ul{margin:0 0 14px 20px}
+li{margin-bottom:6px;color:var(--text)}
+.cta-box{background:linear-gradient(135deg,rgba(225,69,45,.18),rgba(212,169,68,.18));border:1px solid var(--border);padding:20px;border-radius:12px;margin:28px 0 0;text-align:center}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:700}
+.cta:hover{background:var(--accent2)}
+a{color:var(--accent2)}
+footer{text-align:center;margin-top:26px;color:var(--muted);font-size:.83rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article>
+<h1>AI 短劇提示詞完整教學（2026）：鉤子 + 場景 prompt 一次搞掂</h1>
+<p class="meta">2026-09-07 · 短劇製作教學 · 閱讀約 6 分鐘</p>
+<p>而家做 AI 短劇（AI Short-Drama）最大嘅卡關，唔係工具（即夢 AI、可靈 Kling、Seedance、Sora 都好成熟），而係<b>唔識寫 prompt</b>。結果滾出一堆「有畫面但冇劇情、第一眼就熄」嘅片。</p>
+<p>呢篇用一個 8 維 prompt 框架＋3 組即用模板，幫你由「寫一堆字」變成「一句話勾到人睇落去」。呢種方法唔係 AI 亂兜，係短劇編劇同 AI 生圖提示詞嘅結合。</p>
+
+<h2>點解你嘅 AI 短劇第一眼就「唔吸引」</h2>
+<p>最常見三個死因：</p>
+<ul>
+<li><b>得描述，冇鉤子</b>：只係描述場景，冇頭 3 秒嘅「反轉／張力」，觀眾一碌即走。</li>
+<li><b>鏡頭太平</b>：淨係「一個女人走進來」，冇 shot size、冇構圖、冇光影，睇落似幻燈片。</li>
+<li><b>無連貫</b>：前後鏡頭風格唔一致，剪埋一齊好成「拼接」。</li>
+</ul>
+<p>解決方法就係：<b>短劇提示詞＝鉤子（劇情張力）＋場景（鏡頭語言）＋風格（視覺一致性）</b>，三層都要寫齊。</p>
+
+<h2>AI 短劇提示詞 8 維框架</h2>
+<ol>
+<li><b>角色</b>：身份、年齡、表情、著裝（「30歲落難貴婦，眼神硬淨」）</li>
+<li><b>場景</b>：地點＋時間＋環境光（「深夜頂樓，冷藍色城市霓虹」）</li>
+<li><b>鏡頭</b>：shot size（遠/中/近/特寫）＋構圖＋機位角度</li>
+<li><b>光影</b>：對比、色溫（「冷色主調，單側強光源」）</li>
+<li><b>動作</b>：一個明確動作，唔好兩個以上</li>
+<li><b>情緒</b>：呢一幕要觀眾感受到咩</li>
+<li><b>風格</b>：電影感／賽博朋克／中式復古，統一一套</li>
+<li><b>ratio＋時長</b>：9:16 直版短劇首選，註明秒數</li>
+</ol>
+
+<h2>3 組即用短劇 prompt 模板（複製就改）</h2>
+<h3>① 短劇鉤子版（頭 3 秒要掂）</h3>
+<pre><code>鏡頭：極近特寫，節奏快，9:16。
+角色：30歲落難貴婦，眼影化開，嘴唇微顫。
+動作：擡頭，眼神由絕望轉為狠厲——隻眼硬淨咗。
+環境：深夜破舊包廂，單側強光，冷藍色。
+反轉: 一句:「呢單嘢，我唔會再忍。」
+情緒：由屈辱切入狠勁，得3秒。</code></pre>
+<h3>② 場景氛圍版（交代世界）</h3>
+<pre><code>鏡頭：中遠景，定鏡／極慢推，9:16。
+場景：中式舊樓天台，煙霧繚繞，雨後濕漉。
+光影：冷藍主調，遠處一條暖黃街燈。
+角色：兩個背影對立，唔露正臉。
+風格：電影感，阿莫多華式濃郁色調。
+時長：5 秒。</code></pre>
+<h3>③ 連貫分鏡版（一套拍落去）</h3>
+<pre><code>統一風格：冷色系，霧面質感，低飽和。
+Shot1 特寫：一隻手撳「去意已決」嘅門鐘。
+Shot2 中景：眼神慌亂嘅女人開門。
+Shot3 遠景：門外男人反光剪影，居高臨下。
+節奏：每鏡3秒，同鏡頭成組相扣。</code></pre>
+
+<h2>用邊隻 AI 工具？</h2>
+<p>短劇首選<b>即夢 AI</b>／<b>可靈 Kling</b>（中文語境、人物連貫強）、<b>Seedance</b>（動作感強）、<b>Sora</b>（寫實但貴）。祕訣係每隻工具 prompt 用語唔同，即夢重視「場景＋構圖」，Seedance 重視「動作＋物理」，照上邊框架套落去就得。</p>
+
+<h2>想更快？用現成鉤子 + 場景包</h2>
+<p>框架識寫，但由零砌 100 個鉤子要好耐。如果你想要<b>即用嘅 100 個短劇鉤子（12 大題材，每個連配 AI prompt 模板）＋200 個電影級場景 prompt＋分鏡表</b>，可以直接攞整套工具包：</p>
+<div class="cta-box">
+<p style="font-weight:700">AI Short-Drama Creator Toolkit</p>
+<p style="color:var(--muted);margin-bottom:16px">100 鉤子 + 200 場景 prompt + 標題縮圖包 — 複製即用，即買即下載</p>
+<a class="cta" href="https://lescheungstudio.gumroad.com/l/ai-shortdrama-hooks-pack">立即下載鉤子包 — $19</a>
+<p style="margin-top:14px;font-size:.92rem"><a href="https://lescheungstudio.gumroad.com/l/ai-shortdrama-complete-bundle">升級 3-in-1 完整套裝 — $39</a> · <a href="https://lescheungstudio.gumroad.com/l/ai-shortdrama-scene-prompts">單買 200 場景 prompt — $19</a></p>
+</div>
+</article>
+<footer>© Les Cheung Studio · <a href="https://lescheung.github.io/ai-shortdrama-toolkit/">AI 短劇工具包</a> · 更多短劇教學</footer>
+</div>
+</body>
+</html>
